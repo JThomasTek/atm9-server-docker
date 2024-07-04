@@ -1,6 +1,6 @@
 services:
   atm:
-    image: zekro/atm9
+    image: jthomastek/atm9
     restart: unless-stopped
     environment:
       XMS: 4G
