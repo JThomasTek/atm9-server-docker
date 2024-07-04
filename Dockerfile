@@ -2,7 +2,7 @@ FROM ghcr.io/zekrotja/minebase:jdk-17
 
 COPY scripts/ scripts/
 COPY template.server.properties .
-COPY patch/ patch/
+# COPY patch/ patch/
 
 RUN bash ./scripts/download-latest.sh atm-server.zip \
     && unzip atm-server.zip \
