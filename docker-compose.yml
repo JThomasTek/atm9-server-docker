@@ -1,10 +1,10 @@
 services:
   atm:
-    image: jthomastek/atm9
+    image: ghcr.io/jthomastek/atm9-server-docker:latest
     restart: unless-stopped
     environment:
       XMS: 4G
-      XMX: 8G
+      XMX: 10G
       MAX_AGE_BACKUP_FILES: 30d
       PRE_START_BACKUP: "false"
       POST_START_BACKUP: "false"
